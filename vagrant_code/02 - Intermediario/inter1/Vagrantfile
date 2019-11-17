@@ -1,0 +1,15 @@
+# Defini as variaveis
+BOX       = "centos/7"
+NETWORK   = "10.5.25."
+
+
+Vagrant.configure("2") do |config|
+  config.vm.define "work01" do |work01|
+    work01.vm.box = BOX
+    work01.vm.network "private_network", ip: NETWORK+"10"
+  end
+  config.vm.define "work02" do |work02|
+    work02.vm.box   = BOX
+    work02.vm.network "private_network", ip: NETWORK+"11"
+  end
+end
