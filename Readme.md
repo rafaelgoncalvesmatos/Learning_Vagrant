@@ -85,6 +85,10 @@ Ou uma maquina especifica:
 $ vagrant destroy a444
 ```
 
+Para nao perguntar se vc tem certeza de remover execute com parametro **-f**:
+```
+$ vagrant destroy -f 
+```
 
 ## Conclusao
 
