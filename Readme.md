@@ -73,6 +73,19 @@ Executando:
 $ vagrant halt a44
 ```
 
+# Destruindo
+
+Para destruicao execute:
+```
+$ vagrant destroy 
+```
+
+Ou uma maquina especifica:
+```
+$ vagrant destroy a444
+```
+
+
 ## Conclusao
 
 Uma ferramente de curto aprendizado e com muito resultado para POC, Lab, estudos e documentacao de infraestrutura.
