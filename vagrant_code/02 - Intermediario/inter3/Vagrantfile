@@ -1,0 +1,22 @@
+
+configuracoes = {
+  "work1"   =>  { "images" => "centos/7" },
+  "work2"   =>  { "images" => "centos/7" },
+  "work3"   =>  { "images" => "centos/7" },
+}
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box_check_update = false
+
+  configuracoes.each do |nome,conf|
+    config.vm.define "#{nome}" do |maquina|
+      maquina.vm.box      = "#{conf["images"]}"
+      maquina.vm.hostname = "#{nome}.pensandoemlinuxcom"
+      maquina.vm.provider "virtualbox" do |customizando|
+        customizando.name = "#{nome}"
+        customizando.customize ["modifyvm", :id, "--groups", "/777-Elasticsearch"]
+      end  
+    end
+  end
+end

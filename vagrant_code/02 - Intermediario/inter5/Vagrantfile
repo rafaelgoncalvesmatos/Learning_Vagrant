@@ -1,0 +1,32 @@
+
+configuracoes = {
+  # "work1"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
+  # "work2"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
+  # "work3"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
+  "master"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
+}
+
+Vagrant.configure("2") do |config|
+
+  config.vm.box_check_update = false
+
+  configuracoes.each do |nome,capacity|
+    config.vm.define "#{nome}" do |maquina|
+      maquina.vm.box      = "#{capacity["images"]}"
+      maquina.vm.network "private_network", ip: "10.5.25.#{capacity["ip"]}"
+      maquina.vm.hostname = "#{nome}.pensandoemlinuxcom"
+      maquina.vm.provider "virtualbox" do |customizando|
+        customizando.cpus   = capacity["cpu"]
+        customizando.memory = capacity["memory"]
+        customizando.name   = nome
+        customizando.customize ["modifyvm", :id, "--groups", "/777-Elasticsearch"]
+        
+        if nome == "master" and not File.file?('iscsi777.vdi')
+          customizando.customize [ "createhd", "--filename", "iscsi777.vdi", "--format", "VDI", "--size", 20024 ]
+          customizando.customize [ "storagectl", :id, "--name", "SATA Controller", "--add", "sata" ]
+          customizando.customize [ "storageattach", :id, "--storagectl", "Sata Controller", "--port", 1, "--device", 0, "--type", "hdd",  "--medium", "iscsi777.vdi" ]
+        end
+      end  
+    end
+  end
+end
