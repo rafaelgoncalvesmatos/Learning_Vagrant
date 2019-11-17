@@ -1,4 +1,4 @@
-# Welcome to Vagrant basic1 ;) !
+# Welcome to Vagrant ;) !
 
 Esta e uma demostracao de uso do vagrant basico1
 

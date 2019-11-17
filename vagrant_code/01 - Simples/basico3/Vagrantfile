@@ -1,0 +1,16 @@
+Vagrant.configure("2") do |config|
+  config.vm.define "maquina_centos" do |centos|
+    centos.vm.box = "centos/7"
+    centos.vm.provider "virtualbox" do |centosconf|
+      centosconf.memory   = "1024"
+      centosconf.cpus     = "2"
+    end
+  end
+  config.vm.define "maquina_ubuntu" do |ubuntu|
+    ubuntu.vm.box = "ubuntu/trusty64"
+    ubuntu.vm.provider "virtualbox" do |ubuntuconf|
+      ubuntuconf.memory   = "1024"
+      ubuntuconf.cpus     = "1"
+    end
+  end
+end
