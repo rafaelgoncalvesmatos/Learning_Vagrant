@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "generic/centos7"
+  # Desabilita checagem de certificado para realizacao do download
   config.vm.box_download_insecure = true
   config.vm.provision "docker" do |d|
     d.build_image "/vagrant/app"
