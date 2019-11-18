@@ -1,0 +1,47 @@
+
+configuracoes = {
+  "web"   =>  { "image" => "nginx" },
+  "consul"   =>  { "image" => "consul"},
+}
+
+
+Vagrant.configure("2") do |config|
+
+  configuracoes.each do |nome,array|
+
+    config.vm.define "#{nome}"  do |docker|
+      docker.vm.network :private_network, type: "dhcp", docker_network__internal: true
+      docker.vm.network :private_network,
+          ip: "172.20.128.2", netmask: "16"
+      docker.vm.network :private_network, type: "dhcp", subnet: "2a02:6b8:b010:9020:1::/80"
+      docker.vm.provider "docker" do |d|
+        # d.build_dir = "docker_build_dir"
+        d.image = "#{array["image"]}"
+      end
+    end
+  end
+end
+
+
+
+
+
+# configuracoes = {
+#   "web"   =>  { "image" => "nginx" },
+#   "consul"   =>  { "image" => "consul"},
+# }
+
+# Vagrant.configure do |config|
+
+#   config.vm.box = "generic/centos7"
+#   config.vm.box_download_insecure = true
+#   configuracoes.each do |nome,image|
+#     # config.vm.define nome do
+#       config.vm.provider "docker" do |d|
+#         d.image = config["image"]
+#       end
+#     # end
+#   end
+# end
+
+
