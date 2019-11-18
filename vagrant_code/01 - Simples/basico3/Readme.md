@@ -6,4 +6,4 @@ Texto
 
 Nesta parte subiremos duas maquinas.
 
-![](../../.images/img2.png)
+![](../../../.images/img2.png)
