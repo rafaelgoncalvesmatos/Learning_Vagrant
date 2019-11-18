@@ -1,0 +1,7 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/centos7"
+  config.vm.box_download_insecure = true
+  config.vm.provision "docker" do |d|
+    d.build_image "/vagrant/app"
+  end
+end
