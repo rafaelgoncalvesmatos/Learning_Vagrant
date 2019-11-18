@@ -73,7 +73,7 @@ Executando:
 $ vagrant halt a44
 ```
 
-# Destruindo
+## Destruindo
 
 Para destruicao execute:
 ```
