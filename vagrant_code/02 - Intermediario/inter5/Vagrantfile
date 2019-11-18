@@ -1,9 +1,9 @@
 
 configuracoes = {
-  # "work1"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
-  # "work2"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
-  # "work3"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
-  "master"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
+  "work1"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "101" },
+  "work2"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "102" },
+  "work3"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "103" },
+  "master"   =>  { "images" => "centos/7", "memory" => "1256", "cpu" => "1", "ip" => "100" },
 }
 
 Vagrant.configure("2") do |config|
