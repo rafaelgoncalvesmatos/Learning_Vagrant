@@ -1,14 +1,3 @@
-# Welcome to Vagrant basic1 ;) !
+# Welcome to Vagrant ;) !
 
 Texto
-
-# Utilizando
-
-Texto **aqui**
-
-```
-```
-
-# Outros
-
-> texte
