@@ -1,0 +1,12 @@
+Vagrant.configure("2") do |config|
+
+    config.vm.box_download_insecure = true
+
+    (1..30).each do |i|
+        config.vm.define "node-#{i}" do |node|
+            node.vm.provider "docker" do |d|
+              d.image = "redis"
+            end
+        end
+    end
+  end
