@@ -10,3 +10,7 @@ Entre dentro do diretorio do projeto e digite para inicializar a infraestrutura.
 $ vagrant up 
 ```
 
+## Arquitetura
+
+![](../../../.images/basico1/img01.png)
+
