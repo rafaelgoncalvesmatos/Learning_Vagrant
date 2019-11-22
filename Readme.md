@@ -7,20 +7,20 @@ Muito fácil para construção de ambiente de POC.
 ## Indice
 
 1. Basico
-    * [basico 1](./vagrant_code/01\ -\ Basico/basico1/Readme.md)
-    * [basico 2](./vagrant_code/01\ -\ Basico/basico2/Readme.md)
-    * [basico 3](./vagrant_code/01\ -\ Basico/basico3/Readme.md)
+    * [basico1](./vagrant_code/01\ -\ Basico/basico1/Readme.md)
+    * [basico2](./vagrant_code/01\ -\ Basico/basico2/Readme.md)
+    * [basico3](./vagrant_code/01\ -\ Basico/basico3/Readme.md)
 
 2. Intermediario
-    * [intermediario 1](./vagrant_code/02\ -\ Intermediario/inter1/Readme.md)
-    * [intermediario 2](./vagrant_code/02\ -\ Intermediario/inter2/Readme.md)
-    * [intermediario 3](./vagrant_code/02\ -\ Intermediario/inter3/Readme.md)
-    * [intermediario 4](./vagrant_code/02\ -\ Intermediario/inter4/Readme.md)
-    * [intermediario 5](./vagrant_code/02\ -\ Intermediario/inter5/Readme.md)
+    * [intermediario1](./vagrant_code/02\ -\ Intermediario/inter1/Readme.md)
+    * [intermediario2](./vagrant_code/02\ -\ Intermediario/inter2/Readme.md)
+    * [intermediario3](./vagrant_code/02\ -\ Intermediario/inter3/Readme.md)
+    * [intermediario4](./vagrant_code/02\ -\ Intermediario/inter4/Readme.md)
+    * [intermediario5](./vagrant_code/02\ -\ Intermediario/inter5/Readme.md)
 
 3. Avancado
-    * [avancado 1](./vagrant_code/03\ -\ Avancado/avanc1/Readme.md)
-    * [avancado 2](./vagrant_code/03\ -\ Avancado/avanc2/Readme.md)
+    * [avancado1](./vagrant_code/03\ -\ Avancado/avanc1/Readme.md)
+    * [avancado2](./vagrant_code/03\ -\ Avancado/avanc2/Readme.md)
     
 4. Plugins
 5. Truques
