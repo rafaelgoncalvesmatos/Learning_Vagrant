@@ -1,6 +1,6 @@
 # Welcome to Vagrant ;) !
 
-Texto
+Carregamento de mais de uma máquina pelo vagrant, pode auxiliar na contrução de ambientes completos para teste.
 
 # Utilizando
 
