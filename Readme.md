@@ -24,7 +24,11 @@ Muito fácil para construção de ambiente de POC.
     
 4. [Plugins](./vagrant_code/97-plugins/)
 5. Truques
+    *[truque1](./vagrant_code/98-truques/truque01/)
+    *[truque2](./vagrant_code/98-truques/truque02/)
+
 6. Provision
+    *[provision1](./vagrant_code/99-provision/prov01/)
 
 ## Ajuda
 
