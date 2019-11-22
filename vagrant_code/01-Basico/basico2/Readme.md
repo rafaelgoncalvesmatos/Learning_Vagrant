@@ -11,3 +11,8 @@ $ vagrant up
 ```
 
 Este possui uma personalizacao de memoria e cpu.
+
+
+## Arquitetura
+
+![](../../../.images/basico1/img01.png)
