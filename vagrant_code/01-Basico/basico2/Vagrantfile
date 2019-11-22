@@ -5,4 +5,3 @@ Vagrant.configure("2") do |config|
     maquina.cpus    = "4"
   end
 end
-
