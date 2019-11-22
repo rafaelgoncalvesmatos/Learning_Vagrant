@@ -1,0 +1,12 @@
+Vagrant.configure("2") do |config|
+
+    config.vm.box_download_insecure = true
+
+    for i in 1..6 do
+        config.vm.define "elastic-#{i}" do |node|
+            node.vm.provider "docker" do |d|
+              d.image = "elasticsearch"
+            end
+        end
+    end
+  end

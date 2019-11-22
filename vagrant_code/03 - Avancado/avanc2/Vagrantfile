@@ -1,0 +1,13 @@
+$script = <<-SCRIPT
+mkdir -p /datamongo/node
+touch /datamongo/node/info
+SCRIPT
+
+Vagrant.configure("2") do |nodemongo|
+  nodemongo.vm.box = "centos/7"
+  nodemongo.vm.provision "shell",
+    inline: $script
+    # Tipos de caminhos que podem ser utilizados
+    # path: http://pensandoemlinux.com.br/teste
+    # path: "script.sh"
+end
