@@ -23,6 +23,7 @@ Muito fácil para construção de ambiente de POC.
     * [avancado2](./vagrant_code/03-Avancado/avanc2/)
     
 4. [Plugins](./vagrant_code/97-plugins/)
+
 5. Truques
     *[truque1](./vagrant_code/98-truques/truque01/)
     *[truque2](./vagrant_code/98-truques/truque02/)
@@ -32,17 +33,14 @@ Muito fácil para construção de ambiente de POC.
 
 ## Ajuda
 
-Segue alguns links uteis.
-
-Para achar a box que mais agrada:
+Segue alguns links uteis para achar a box que se adeque a sua necessidade:
 
 > https://app.vagrantup.com/boxes/search
 
 ## Iniciando maquina
 
-Para inicio de uma instancia segue exemplo.
-
 Criar o arquivo com **Vagrantfile** que contem as configuracoes da nossa VM, neste caso ele ira definir que a box utilizada sera o centos 7:
+
 ```
 $ vagrant init -m centos/7
 ```
@@ -51,6 +49,7 @@ O parametro -m e de minimal, nao contera os comentarios padroes.
 
 
 Enfim, para iniciar a maquina apenas entre no diretorio de onde esta o arquivo **Vagrantfile** e levante a maquina virtual.
+
 ```
 $ vagrant up
 ```
@@ -60,16 +59,19 @@ $ vagrant up
 ## Acesso a maquina
 
 Para acesso com este comando: 
+
 ```
 $ vagrant ssh
 ```
 
 Uma maquina especifica:
+
 ``` 
 $ vagrant ssh elastic01
 ```
 
 ou 
+
 ```
 $ vagrant ssh a44
 ```
@@ -77,11 +79,13 @@ $ vagrant ssh a44
 ## Desligando maquina
 
 Para desligamento apenas digite no mesmo diretorio:
+
 ```
 $ vagrant halt
 ```
 
 Para desligar uma maquina especifica obtenha o ID:
+
 ```
 $ vagrant global-status
 id       name    provider   state    directory                                                                   
@@ -106,16 +110,19 @@ $ vagrant halt a44
 ## Destruindo
 
 Para destruicao execute:
+
 ```
 $ vagrant destroy 
 ```
 
 Ou uma maquina especifica:
+
 ```
 $ vagrant destroy a444
 ```
 
 Para nao perguntar se vc tem certeza de remover execute com parametro **-f**:
+
 ```
 $ vagrant destroy -f 
 ```
