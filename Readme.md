@@ -7,7 +7,7 @@ Muito fácil para construção de ambiente de POC.
 ## Indice
 
 1. Basico
-    * [basico1](./vagrant_code/01\ -\ Basico/basico1/Readme.md)
+    * [basico1](./vagrant_code/01 - Basico/basico1/Readme.md)
     * [basico2](./vagrant_code/01\ -\ Basico/basico2/Readme.md)
     * [basico3](./vagrant_code/01\ -\ Basico/basico3/Readme.md)
 
