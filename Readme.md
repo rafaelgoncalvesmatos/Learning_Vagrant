@@ -22,7 +22,7 @@ Muito fácil para construção de ambiente de POC.
     * [avancado1](./vagrant_code/03-Avancado/avanc1/)
     * [avancado2](./vagrant_code/03-Avancado/avanc2/)
     
-4. Plugins
+4. [Plugins](./vagrant_code/97-plugins/)
 5. Truques
 6. Provision
 
