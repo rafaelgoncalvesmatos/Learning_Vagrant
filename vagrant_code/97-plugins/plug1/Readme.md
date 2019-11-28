@@ -2,6 +2,8 @@
 
 Utilizado para deixar mais fácil ou personalizar ainda mais as VMs provisionadas.
 
+Podendo ser instalado para alteracao de nome da maquina, personalizacao e entre outros recursos.
+
 ## Instalacao 
 
 Para instalacao é bem simples.
