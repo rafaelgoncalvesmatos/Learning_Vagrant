@@ -4,6 +4,8 @@ Este repositorio vem para auxiliar na documentacao dos estudos referente a está
 
 Muito fácil para construção de ambiente de Lab e POC.
 
+![VSCODE](.images/mapamental.jpg)
+
 ## Conteudo
 
 Alterando essa documentação para ficar mais dinamica, deixando tudo claro e objetivo.
