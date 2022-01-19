@@ -17,6 +17,13 @@ Entendendo para que serve cada contexto e as suas evoluções iniciais.
 Uma Box é uma imagem já criada que pode ser baixada através do repositório de boxes na URL abaixo.
 
 A box vem com tudo pronto, tanto a parte de particionamento quanto o sistema e a versão que voce deseja. Toda a parte de cofiguração de recursos como CPU, Memoria, Disco, Rede e entre outros vai ser configurado via código.
+
+## Ajuda
+
+Para achar a box que mais agrada:
+
+> https://app.vagrantup.com/boxes/search
+
 ### Iniciando
 
 
