@@ -36,7 +36,7 @@ Para achar a box que mais agrada:
 Tudo começa pelo básico dentro do nosso projeto, dentro desses arquivos vai encontrar formas básicas de provisionamento de recursos no provider utilizando o vagrant.
 
 1. Arquivos.
-    * `[basico1](./vagrant_code/01-Basico/basico1/)` - Neste projeto voce irá subir um centos simples com apenas 3 linhas de código.
+    * [basico1](./vagrant_code/01-Basico/basico1/) - Neste projeto voce irá subir um centos simples com apenas 3 linhas de código.
 
     * [basico2](./vagrant_code/01-Basico/basico2/) - Já neste possui uma customização da VM, como CPU, memória na nossa box.
   
