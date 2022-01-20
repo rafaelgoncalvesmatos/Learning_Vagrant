@@ -1,3 +1,5 @@
+![INTRO](https://www.shutterstock.com/image-photo/alphabetized-organizing-filing-system-close-shot-1913869357)
+
 # Vagrant
 
 Este repositorio vem para auxiliar na documentacao dos estudos referente a está solução da Hashicorp para provisionamento de recursos.
